@@ -1,0 +1,59 @@
+﻿<div class="container body-content" ng-show="true" ng-controller="HomeController">
+    <div class="jumbotron">
+        <div class="container" ng-show="all">
+            <div class="row">
+                <h2>Ofte stilte spørsmål</h2>
+            </div>
+            <div class="text-center" ng-show="onload"><h3>Laster data, vennligst vent ...</h3></div>
+            <div ng-repeat="cat in category">
+                <div class="faq-section">
+                    <div class="panel-body">
+                        <h3><strong>   <img src="../../Content/img/{{cat.categoryID}}.png" style="width:34px;height:34px" /> {{cat.category}}</strong></h3>
+                        <div class="col-md-13">
+                            <div class="row">
+                                <accordion>
+                                    <accordion-group ng-repeat="q in cat.questionlist | limitTo:4" is-open="isOpen">
+                                        <accordion-heading is-open="isOpen">
+                                            <h4>  {{q.question}} </h4>
+                                        </accordion-heading>
+                                        {{q.answer}}
+                                    </accordion-group>
+                                </accordion>
+                            </div>
+                        </div>
+                        <button class="btn btn-default " ng-click="seeCategory(cat.categoryID)">Se alle</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="searchrow" ng-show="searchdiv">
+            <form class="form-search ">
+                <div class="input-append centerplacement ">
+                    <input type="search" ng-model="searchText" placeholder=" Søk etter et ord eller fult spørsmål du ønsker å vite mer om" class="span2 search-query resizeseach">
+                    <button type="submit" class="seachbtn pull-right"><span class="glyphicon glyphicon-search"></span></button>
+                </div>
+            </form>
+        </div>
+        <div class="container" ng-show="showcategory">
+            <div class="row ">
+                <h3><strong> <img src="../../Content/img/{{list[0].categoryID}}.png" style="width:34px;height:34px" /> {{list[0].category}}</strong></h3>
+            </div>
+            <div ng-repeat="l in list">
+                <div class="row col-md-20">
+                    <div class="row">
+                        <accordion>
+                            <accordion-group ng-repeat="q in l.questionlist | filter:searchText" is-open="isOpen">
+                                <accordion-heading is-open="isOpen">
+                                    <h4>  {{q.question}} </h4>
+                                </accordion-heading>
+                                {{q.answer}}
+                            </accordion-group>
+                        </accordion>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>

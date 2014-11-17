@@ -1,0 +1,62 @@
+﻿<div class="container body-content" ng-show="true" ng-controller="AdminController">
+    <div class="jumbotron">
+        <div class="container" ng-show="unasweredsQuestions">
+            <div class="row">
+                <h2>Ubesvarte spørsmål</h2>
+            </div>
+            <div ng-repeat="cat in categorylist">
+              <h3><strong> <img src="../../Content/img/{{cat.categoryID}}.png" style="width:34px;height:34px" /> {{cat.category}}</strong></h3>
+                        <div class="col-md-20">
+                            <div class="row">
+                                    <div ng-repeat="q in cat.questionlist">
+                                        <h4>    {{q.question}} <button class="btn btn-success pull-right" ng-click="changeQuestion(q.id)">Svar</button>  </h4>
+                                        <br />
+</div>
+                            </div>
+                     </div>
+            </div>
+        </div>
+        <div class="container" ng-show="ChangeQuestion">
+            <div class="row">
+                <h2>Svar spørsmål</h2>
+                <h4 class="pull-right">Sendt fra:{{email}}</h4>
+            </div>
+            <div class="margin">
+                <label>Endre formulering på spørsmålet</label>
+                <form name="qForm">
+                    <div class="row  col-md-6 ">
+                        <div class="form-group">
+                           
+                            <input class="form-control input-group-sm " name="question" ng-model="question" ng-required="true"  tabindex="1" autofocus="" />      
+                        </div>
+                    </div>
+                   <div class="col-md-3 pull-right">
+                       <select class="form-control input-sm" ng-model="cid">
+                           <option value="">-- Plasser i kategori --</option>
+                           <option ng-repeat="category in categorylist" value="{{category.categoryID}}" ng-disabled="checked">
+                               {{category.category}}
+                           </option>
+                       </select>
+                    </div>
+
+
+                    <div>        
+                        <textarea placeholder="Skriv inn et svar her" name="answer" ng-model="answer" ng-required="true" ></textarea>
+                    </div>
+
+
+                    <button ng-click="updateQuestion()" class="btn btn-primary" ng-disabled="qForm.$invalid" tabindex="3">
+                        <i class="glyphicon glyphicon-pencil"></i>  Send
+                    </button>
+                    <button ng-click="deleteQuestion(id)" class="btn btn-danger" tabindex="4">
+                        <i class="glyphicon glyphicon-trash"></i>  Forkast
+                    </button>
+
+                </form>
+
+
+            </div>
+            
+        </div>
+    </div>
+</div>

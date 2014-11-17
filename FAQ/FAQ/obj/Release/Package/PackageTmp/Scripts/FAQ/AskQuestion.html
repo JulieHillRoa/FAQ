@@ -1,0 +1,38 @@
+﻿<div class="container body-content" ng-show="true" ng-controller="HomeController">
+    <div class=" jumbotron">
+        <div class=" container">
+            <h2>Spør oss | <small>Har du et spørsmål til oss som du ikke finner på FAQ siden vår send oss en melding her..</small></h2>
+            <div class="margin">
+                <form name="qForm">
+                    <div class="row  col-md-6 ">
+                        <div class="form-group">
+                            <input class="form-control input-group-sm " name="email" ng-model="email" ng-required="true" ng-pattern="/^[_a-z0-9]+(\.[_a-z0-9-]+)*@[a-z0-9]+(\.[az0-9]+)*(\.[a-z]{2,4})$/" placeholder="email du ønsket svaret til" tabindex="1" autofocus="" />
+                            <p ng-show="qForm.email.$invalid && qForm.email.$dirty">Skriv inn en lovlig email</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pull-right">
+                        <select class="form-control input-sm" ng-model="categoryID">
+                            <option value="">-- Velg kategori --</option>
+                            <option ng-repeat="category in category" value="{{category.categoryID}}" ng-disabled="checked">
+                                {{category.category}}
+                            </option>
+                        </select>
+                    </div>
+
+
+                    <div>
+                        <textarea placeholder="Skriv inn ditt spørsmål her" name="message" ng-model="message" ng-required="true"></textarea>
+                    </div>
+
+
+                    <button ng-click="sumbitQuestion()" class="btn btn-primary" ng-disabled="qForm.$invalid" tabindex="3">
+                        <i class="glyphicon glyphicon-pencil"></i>  Send
+                    </button>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>
+

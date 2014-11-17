@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="FAQDB-Web.config Connection String" description="FAQDB Connection String used in web.config by the application to access the database." defaultValue="data source=(LocalDb)\v11.0;initial catalog=FAQ.Models.FAQDB;integrated security=True;MultipleActiveResultSets=True;App=EntityFramework" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\JulieHillRoa\\Documents\\Visual\ Studio\ 2013\\Projects\\mappe3\\FAQ\\FAQ\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='FAQDB']/@connectionString" />
+  </parameter>
+</parameters>

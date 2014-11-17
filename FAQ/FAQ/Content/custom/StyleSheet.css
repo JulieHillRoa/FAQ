@@ -1,0 +1,206 @@
+﻿html 
+{
+    height: 100%
+}
+body 
+{
+    background: #cbebff; /* Old browsers */
+    background: -moz-linear-gradient(left,  #819d83 0%, #e0f4e1 20%, #e0f4e1 80%, #819d83 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#819d83), color-stop(20%,#e0f4e1), color-stop(80%,#f0f9ff), color-stop(100%,#e0f4e1)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(left,  #819d83 0%,#e0f4e1 15%,#e0f4e1 85%,#819d83 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left,   #819d83 0%,#e0f4e1 15%,#e0f4e1 85%,#819d83 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left,  #819d83 0%,#e0f4e1 15%,#e0f4e1 85%,#819d83 100%); /* IE10+ */
+    background: linear-gradient(to right,  #819d83 0%,#e0f4e1 15%,#e0f4e1 85%,#819d83 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e0f4e1', endColorstr='#819d83f',GradientType=1 ); /* IE6-9 */
+    
+}
+#homeLink:hover
+{
+    -webkit-transition: all .2s ease-in-out; 
+    transition: .3s;
+}
+#logo{
+-webkit-transform:scale(1.0); 
+-moz-transform:scale(0.9); 
+-o-transform:scale(0.9); 
+-webkit-transition-duration: 0.5s; 
+-moz-transition-duration: 0.5s; 
+-o-transition-duration: 0.5s;
+opacity: 0.9; 
+margin: 0 10px 5px 0; 
+}
+
+#logo:hover{
+-webkit-transform:scale(1.1); 
+-moz-transform:scale(1.0); 
+-o-transform:scale(1.0); 
+opacity: 1;
+}
+
+
+.navbar-inner{
+background: #3c4a3c; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #000000 0%,#3c4a3c 50%, #6b876d 100%, #97b098 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right bottom, color-stop(0%,#000000), color-stop(50%,#3c4a3c), color-stop(100%,#6b876d), color-stop(100%,#97b098)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(-45deg,  #000000 0%,#3c4a3c 50%,#6b876d 100%,#97b098 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(-45deg,  #000000 0%,#3c4a3c50%,#6b876d 100%,#97b098 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(-45deg,  #000000 0%,#3c4a3c 50%,#6b876d 100%,#97b098 100%); /* IE10+ */
+background: linear-gradient(135deg, #000000 0%,#3c4a3c 50%,#6b876d 100%,#97b098 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#97b098',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+margin-bottom:0px;
+-webkit-box-shadow: 0px 3px 10px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 3px 10px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 3px 10px 0px rgba(50, 50, 50, 0.75);
+margin-bottom:0px;
+}
+
+.navUl
+{
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+.navUl a
+{
+    margin-right: 42px;
+    font-family: sans-serif;
+    color:#ffffff;
+}
+
+.navUl a:hover
+{
+    background: transparent;
+    color:#dbefdc;
+    text-decoration: none;
+}
+
+.navUl a:focus
+{
+    outline: 0;
+    text-decoration: none;
+}
+
+.margintopnull 
+{
+    margin-top: 0px;
+}
+
+.searchcontainer 
+{
+    margin-top:-20px;
+    background: #D6D6D6;
+    -webkit-box-shadow: 0px 4px 12px 0px rgba(50, 50, 50, 0.75);
+    height:60px;
+}
+.search 
+{
+    margin-bottom:0px;
+}
+
+.containerMargain
+{
+    margin-left: 145px;
+}
+
+.jumbotron
+{
+    margin-bottom:15px;
+    min-height:690px;
+-webkit-box-shadow: 0px 3px 10px 0px rgba(50, 50, 50, 0.75);
+-moz-box-shadow:    0px 3px 10px 0px rgba(50, 50, 50, 0.75);
+box-shadow:         0px 3px 10px 0px rgba(50, 50, 50, 0.75);
+}
+
+textarea
+{
+    width: 99%;
+    height:380px;
+}
+
+.searchrow 
+{
+
+    background-color:#f7f7f7;
+    height: 60px;
+    width:inherit;
+    margin-top:-48px;
+    margin-left:-60px;
+    margin-right:-60px;
+}
+
+.resizeseach 
+{
+
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    width:92.2%;
+    height:40px;
+}
+
+.centerplacement 
+{
+    margin-left: 25%;
+    margin-right:30%;
+    padding-top:1%;
+
+}
+
+.seachbtn {
+
+    width:40px;
+    height:40px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.margin 
+{
+    margin-top:40px;
+}
+
+.faq-section 
+{
+    margin-bottom:8px; 
+    width: 49%; 
+    margin-right: 1%; 
+    float:left; 
+    height:370px;
+}
+
+.panel-heading {
+
+    color:none;
+    padding:1px;
+    border:none;
+    background-color:#eee;
+    
+}
+
+h4.ng-binding.ng-scope {
+color: cadetblue;
+}
+
+.panel-default > .panel-heading {
+background-color: #eee;
+border: none;
+}
+
+.jumbotron p {
+margin-bottom: 15px;
+ font-size: 13px; 
+ color:red;
+font-weight: 200;
+}
+
+.btn-default {
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+     border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+
+ 
+
+

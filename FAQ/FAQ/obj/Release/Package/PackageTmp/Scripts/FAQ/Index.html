@@ -1,0 +1,22 @@
+﻿<!DOCTYPE html>
+<html ng-app="FAQ">
+<head>
+    <script src="../angular.js"></script>
+    <script src="../angular-route.js"></script>
+    <script src="../ui-bootstrap-tpls-0.11.2.min.js"></script>
+    <link href="../../Content/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../../Content/custom/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="../../Content/logo/snublevann_logo_small.png">
+    <script src="HomeController.js"></script>
+    <script src="AdminController.js"></script>
+   
+
+    <title>FAQ</title>
+</head>
+<body>
+    <div ng-include="'CustomNav.html'"></div>
+    <div ng-view></div>
+    <div ng-include="'footer.html'"></div>
+
+</body>
+</html>
