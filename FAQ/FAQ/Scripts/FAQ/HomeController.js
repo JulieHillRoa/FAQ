@@ -27,7 +27,7 @@ FAQ.config(function ($routeProvider) {
 
 
 
-FAQ.controller('HomeController', function ($scope, $http,$route) {
+FAQ.controller('HomeController', function ($scope, $http,$location) {
 
     var url = '../../api/Home/';
     $scope.all = true;
@@ -39,7 +39,6 @@ FAQ.controller('HomeController', function ($scope, $http,$route) {
     $http.get(url).
       success(function (allcategories) {
           $scope.category = allcategories;
-          console.log(allcategories);
           $scope.onload = false;
          
          
@@ -62,7 +61,8 @@ $scope.sumbitQuestion = function () {
 
     $http.post(url, question).
       success(function (data) {
-          $route.reload();
+          alert('Du har nå sendt et spøsrmål, du vil få svar innen 5 virkedager :)');
+          $location.path('/Faq');
           
       }).
       error(function (data, status) {
@@ -78,10 +78,7 @@ $scope.seeCategory = function (id) {
 
         $http.get(url+id).
           success(function (allQIncategories) {
-              $scope.list = allQIncategories;
-              console.log(allQIncategories);
-              console.log(allQIncategories[0].category);
-              
+              $scope.list = allQIncategories;  
 
           }).
           error(function (data, status) {

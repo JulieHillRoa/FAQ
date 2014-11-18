@@ -11,8 +11,7 @@ FAQ.controller('AdminController', function ($scope, $http, $route) {
         $http.get(url).
           success(function (allcategories) {
               $scope.categorylist = allcategories;
-              console.log(allcategories); 
-         
+              
           }).
           error(function (data, status) {
               console.log(status + data);
@@ -30,14 +29,14 @@ $scope.changeQuestion = function (id){
 
     $http.get(url + id).
        success(function (question) {
-           // får den oppdaterte kunden tilbake
+           
            $scope.id = question.id;
            $scope.cid = question.categoryid;
            $scope.category = question.category;
            $scope.question = question.question;
            $scope.isfeguant = question.isfequant;
            $scope.email = question.email;
-           console.log("iden er nå = " + $scope.cid);
+         
        }).
        error(function (data, status) {
            console.log(status + data);
