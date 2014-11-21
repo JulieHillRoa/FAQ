@@ -37,7 +37,6 @@ namespace FAQ.Controllers
             {
                 Question question = new Question();
                 question.question = q.question;
-                question.date = DateTime.Now;
                 question.email = q.email;
 
                 if(  q.categoryid == 0)

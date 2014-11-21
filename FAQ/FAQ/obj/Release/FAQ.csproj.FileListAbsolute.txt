@@ -16,3 +16,21 @@ C:\Users\JulieHillRoa\Documents\Visual Studio 2013\Projects\mappe3\FAQ\FAQ\bin\S
 C:\Users\JulieHillRoa\Documents\Visual Studio 2013\Projects\mappe3\FAQ\FAQ\obj\Release\FAQ.csprojResolveAssemblyReference.cache
 C:\Users\JulieHillRoa\Documents\Visual Studio 2013\Projects\mappe3\FAQ\FAQ\obj\Release\FAQ.dll
 C:\Users\JulieHillRoa\Documents\Visual Studio 2013\Projects\mappe3\FAQ\FAQ\obj\Release\FAQ.pdb
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\FAQ.dll.config
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\FAQ.dll
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\FAQ.pdb
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\EntityFramework.dll
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\EntityFramework.SqlServer.dll
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\Newtonsoft.Json.dll
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\System.Net.Http.Formatting.dll
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\System.Web.Http.dll
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\System.Web.Http.WebHost.dll
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\EntityFramework.xml
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\EntityFramework.SqlServer.xml
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\Newtonsoft.Json.xml
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\System.Net.Http.Formatting.xml
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\System.Web.Http.xml
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\System.Web.Http.WebHost.xml
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\obj\Release\FAQ.csprojResolveAssemblyReference.cache
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\obj\Release\FAQ.dll
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\obj\Release\FAQ.pdb

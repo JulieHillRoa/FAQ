@@ -11,7 +11,8 @@ namespace FAQ.Models
         public int id { get; set; }
         public int categoryid { get; set; }
         public String category { get; set; }
-        public DateTime date { get; set; }
+        [DisplayFormat(DataFormatString = "{0:dd.MM.yyyy}")]
+        public String date { get; set; }
         public String question { get; set; }
         public String answer { get; set; }
         public bool isfequant { get; set; }

@@ -8,7 +8,7 @@
             <div ng-repeat="cat in category">
                 <div class="faq-section">
                     <div class="panel-body">
-                        <h3><strong>   <img src="../../Content/img/{{cat.categoryID}}.png" style="width:34px;height:34px" /> {{cat.category}}</strong></h3>
+                        <h3><strong>   <img src="../../Content/img/{{cat.categoryID}}_.png" style="width:34px;height:34px" /> {{cat.category}}</strong></h3>
                         <div class="col-md-13">
                             <div class="row">
                                 <accordion>
@@ -21,7 +21,8 @@
                                 </accordion>
                             </div>
                         </div>
-                        <button class="btn btn-default " ng-click="seeCategory(cat.categoryID)">Se alle</button>
+                            <button class="btn btn-default " ng-click="seeCategory(cat.categoryID)">Se alle</button>
+    
                     </div>
                 </div>
 
@@ -35,9 +36,9 @@
                 </div>
             </form>
         </div>
-        <div class="container" ng-show="showcategory">
+        <div class="container" ng-show="showcategory" id="showcat">
             <div class="row ">
-                <h3><strong> <img src="../../Content/img/{{list[0].categoryID}}.png" style="width:34px;height:34px" /> {{list[0].category}}</strong></h3>
+                <h3><strong> <img src="../../Content/img/{{list[0].categoryID}}_.png" style="width:34px;height:34px" /> {{list[0].category}}</strong></h3>
             </div>
             <div ng-repeat="l in list">
                 <div class="row col-md-20">

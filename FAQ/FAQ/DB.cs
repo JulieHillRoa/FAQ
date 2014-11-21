@@ -20,7 +20,7 @@ namespace FAQ
                         id = q.Id,
                         categoryid = q.Categoryid,
                         category = q.Category.Category,
-                        date = q.Date,
+                        date = q.Date.ToString(),
                         question = q.Question,
                         answer = q.Answer,
                         isfequant = q.Isfequant,
@@ -81,7 +81,7 @@ namespace FAQ
                 {
                      Categoryid = q.categoryid,
                      Category = db.Categories.Find(q.categoryid),
-                     Date = q.date,
+                     Date = DateTime.Now,
                      Question  = q.question,
                      Answer = q.answer,             
                      Isfequant = q.isfequant,
@@ -146,6 +146,8 @@ namespace FAQ
                 foreach (var item in categories)
                 {
                     item.questionlist = getUnansweredQuestions(item.categoryID);
+                    foreach (var i in item.questionlist)
+                        i.date = i.date.Substring(0, 11);
                 }
                 return categories;
             }
@@ -166,7 +168,7 @@ namespace FAQ
                         id = q.Id,
                         categoryid = q.Categoryid,
                         category = q.Category.Category,
-                        date = q.Date,
+                        date = q.Date.ToString(),
                         question = q.Question,
                         answer = q.Answer,
                         isfequant = q.Isfequant,
@@ -193,7 +195,7 @@ namespace FAQ
                 question.id = questions.Id;
                 question.categoryid = questions.Categoryid;
                 question.category = db.Categories.Find(questions.Categoryid).Category;
-                question.date = questions.Date;
+                question.date = questions.Date.ToString();
                 question.email = questions.email;
                 question.question = questions.Question;
                 question.answer = questions.Answer;
