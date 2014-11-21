@@ -17,8 +17,8 @@ namespace FAQ.Models
                     Id = 0,
                     Categoryid = 2,
                     Date =new DateTime(2012, 05,30),
-                    Question ="Kan dere få betaling på faktura ?",
-                    Answer = "Dette er ikke en mulighet per nå, vi tar kun visa og bankekspress",
+                    Question ="Kan jeg få betaling ved faktura ?",
+                    Answer = "Dette er ikke en mulighet per nå, vi tar kun betaling direkte ved kjøp",
                     Isfequant = true
                 },
                 new Questions {
@@ -132,14 +132,14 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 12,11),
                     Question ="fnjkl flweq nlfwneq?",
                     Answer = "fnewj fewnfn fqwenfj jpfioewq",
-                    Isfequant = true
+                    Isfequant = false
                 },
                  new Questions {
                     Id = 15,
                     Categoryid = 0,
                     Date =new DateTime(2013, 10,25),
-                    Question ="mflkøe nfelwnq njfewqnkj?",
-                    Answer = "vghkf lfhew bflewqvdasu ubhfqw høfqhuv qhi hø wqfhiqw fbwejq",
+                    Question ="Kan jeg følge leveringen til pakken?",
+                    Answer = "Ja, på posten.no, med ordrenummret du fikk på kvitteringen ved bestilling",
                     Isfequant = true
                 },
                  new Questions {
@@ -148,7 +148,7 @@ namespace FAQ.Models
                     Date =new DateTime(2014, 05,30),
                     Question ="nflkaø ghoreqhgo grehgre høøoew",
                     Answer = "fnwe FILEW NFØEW BFIEW",
-                    Isfequant = true
+                    Isfequant = false
                 },
                  new Questions {
                     Id = 17,
@@ -156,7 +156,7 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 03,05),
                     Question ="fnjw ngøew gbguiø hgweø fføweh ufwen?",
                     Answer = "ftygu fcgh vhb gyui køl gfyu dxf de.",
-                    Isfequant = true
+                    Isfequant = false
                 },
                  new Questions {
                     Id = 18,
@@ -164,7 +164,7 @@ namespace FAQ.Models
                     Date =new DateTime(2012, 03,29),
                     Question ="vewqu ih gi jpodwq ?",
                     Answer = "re tyu gvh xdf dfg ghbj iuh jkghj gu tfyu bh dtrf ijko bnj rdrt yui jknl iopitr dxfcgkl.",
-                    Isfequant = true
+                    Isfequant = false
                 },
                  new Questions {
                     Id = 19,
@@ -172,7 +172,7 @@ namespace FAQ.Models
                     Date =new DateTime(2014, 03,14),
                     Question ="fyg vmnb ukgyihl kj.nl oøijlgj gffcgvhbj ?",
                     Answer = "drtufy fjghuyi dfhcg huktr uiuolhk dresydt",
-                    Isfequant = true
+                    Isfequant = false
                 },
                  new Questions {
                     Id = 20,
@@ -180,7 +180,7 @@ namespace FAQ.Models
                     Date =new DateTime(2012, 06,30),
                     Question ="asdyuihk oiug yby hoiwhqoijpkød?",
                     Answer = "rytu gf rytu iop sred78yiu opidrtdfe dwq joihe",
-                    Isfequant = true
+                    Isfequant = false
                 },
                  new Questions {
                     Id = 21,
@@ -188,14 +188,14 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 05,30),
                     Question ="iou fgv kmjøpl gytfg sdfbnm kølkytr fcg?",
                     Answer = null,
-                    Isfequant = true,
+                    Isfequant = false,
                      email="julie.hei@eksempel.com"
                 },
                  new Questions {
                     Id = 22,
                     Categoryid = 1,
                     Date =new DateTime(2012, 07,30),
-                    Question ="Hvordan kan jeg se hvor pakken min er henn ?",
+                    Question ="Kan dere hente pakken min om jeg ikke vil ha den ?",
                     Answer = null,
                     Isfequant = true,
                      email="snuble.alkis@eksempel.com"
@@ -206,7 +206,7 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 05,30),
                     Question ="ghuk iojkn fgjh køl?",
                     Answer = null,
-                    Isfequant = true,
+                    Isfequant = false,
                      email="tulle.vann@eksempel.com"
                 },
                  new Questions {
@@ -215,7 +215,7 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 05,30),
                     Question ="oi ftygh ljikh drtfkjljh df?",
                     Answer = null,
-                    Isfequant = true,
+                    Isfequant = false,
                      email="hei.hei@eksempel.com"
                 }, new Questions {
                     Id = 25,
@@ -223,14 +223,14 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 05,30),
                     Question ="jlk ftygljk dft iouhdfgh ?",
                     Answer = "3 ukers angrerett.",
-                    Isfequant = true
+                    Isfequant = false
                 }, new Questions {
                     Id = 26,
                     Categoryid = 1,
                     Date =new DateTime(2014, 05,30),
                     Question ="ftyugih oij ftygh ljikgh j?",
                     Answer = null,
-                    Isfequant = true,
+                    Isfequant = false,
                      email="haha.ha@eksempel.com"
                 }, new Questions {
                     Id = 27,
@@ -238,7 +238,7 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 05,30),
                     Question ="jiluhi ftyj ijl fy?",
                     Answer = null,
-                    Isfequant = true,
+                    Isfequant = false,
                      email="snuble.hm@eksempel.com"
                 }, new Questions {
                     Id = 28,
@@ -246,7 +246,7 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 05,30),
                     Question ="poi yuhkk gfh yutdr fhjgv jkut ?",
                     Answer = null,
-                    Isfequant = true,
+                    Isfequant = false,
                      email="veit.ikke@eksempel.com"
                 },
                  new Questions {
@@ -255,7 +255,7 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 05,30),
                     Question ="guy ioufyg ijgh ",
                     Answer = null,
-                    Isfequant = true,
+                    Isfequant = false,
                      email="snuble.erlend@eksempel.com"
                 },
                  new Questions {
@@ -264,7 +264,7 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 05,30),
                     Question ="opi yui hgvh jkh hjklk tfhhj klj?",
                     Answer = "tyu oigvhb kljf tyijk dfg uiyt drtf jkh fgh khgd fyg hfgh khj ftyu ihu g nmjbhvg h ugyf.",
-                    Isfequant = true
+                    Isfequant = false
                 },
                  new Questions {
                     Id = 31,
@@ -272,7 +272,7 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 05,30),
                     Question ="pfoewhfhiew iuh ighiu ofw?",
                     Answer = "kledhuy hfhwehfiu hiukjhf igvgierqh heivhivgieurho .",
-                    Isfequant = true
+                    Isfequant = false
                 },
                  new Questions {
                     Id = 32,
@@ -287,16 +287,16 @@ namespace FAQ.Models
                     Id = 33,
                     Categoryid = 1,
                     Date =new DateTime(2013, 05,30),
-                    Question ="foie hfewh oawj ofa ho?",
-                    Answer = "fytgu u",
+                    Question ="Om vinen har korksmak, får jeg en ny en da?",
+                    Answer = "Ja, send den tilbake til oss så sender vi deg en ny i posten gratis",
                     Isfequant = true
                 },
                  new Questions {
                     Id = 34,
                     Categoryid = 2,
                     Date =new DateTime(2013, 05,30),
-                    Question ="påoi iou gfh kl fgch hkj?",
-                    Answer = "jahahshjdkflei jfdk jifl ",
+                    Question ="Må jeg ha java for å betale for varene mine på nett?",
+                    Answer = "jTror nok det dessverre. ",
                     Isfequant = true
                 },
                  new Questions {
@@ -305,22 +305,22 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 05,30),
                     Question ="yui bhjkh  ftg køsd hukj uhk ?",
                     Answer = "poå yug jkh fdg uyfd gjkn .",
-                    Isfequant = true
+                    Isfequant = false
                 },
                  new Questions {
                     Id = 36,
-                    Categoryid = 4,
+                    Categoryid = 3,
                     Date =new DateTime(2013, 05,30),
                     Question ="gyiu kjl fg bjnk ?",
                     Answer = null,
-                    Isfequant = true,
+                    Isfequant = false,
                      email="snuble.julie@eksempel.com"
                 }, new Questions {
                     Id = 37,
-                    Categoryid = 3,
+                    Categoryid = 2,
                     Date =new DateTime(2013, 05,30),
-                    Question ="gh iuhufeh jkldbhjk jfs ?",
-                    Answer = "neajkwhfiwe bieq",
+                    Question ="Har dere studentrabatter ?",
+                    Answer = "Er nok dessverre ikke lov å ha rabatter på alkohol",
                     Isfequant = true
                 }, new Questions {
                     Id = 38,
@@ -328,7 +328,7 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 05,30),
                     Question ="fbriuagf bailb lie?",
                     Answer = "fiodhifher øjoiofakjdwaef joifhoerhoijeo.",
-                    Isfequant = true
+                    Isfequant = false
                 },
                  new Questions {
                     Id = 39,
@@ -336,7 +336,7 @@ namespace FAQ.Models
                     Date =new DateTime(2013, 05,30),
                     Question ="opoi hiufgewuyfg lhfacyg kvafhkvh ?",
                     Answer = "ifj ufbhfck ajoi oigøah hguiahhgøa oøihøgaugh iuauhgahihføahg iuaiugviai.",
-                    Isfequant = true
+                    Isfequant = false
                 },
                  new Questions {
                     Id = 40,

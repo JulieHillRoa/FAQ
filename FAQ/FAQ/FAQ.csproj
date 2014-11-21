@@ -110,6 +110,7 @@
     <Content Include="Scripts\FAQ\AskQuestion.html" />
     <Content Include="Scripts\FAQ\CustomNav.html" />
     <Content Include="Scripts\FAQ\Faqs.html" />
+    <Content Include="Scripts\FAQ\FaqsCategory.html" />
     <Content Include="Scripts\FAQ\footer.html" />
     <Content Include="Scripts\FAQ\HomeController.js" />
     <Content Include="Scripts\FAQ\Index.html" />

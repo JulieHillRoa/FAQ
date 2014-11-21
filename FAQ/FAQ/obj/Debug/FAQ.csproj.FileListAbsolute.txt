@@ -32,3 +32,4 @@ C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\System.Web.Http.xml
 C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\bin\System.Web.Http.WebHost.xml
 C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\obj\Debug\FAQ.dll
 C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\obj\Debug\FAQ.pdb
+C:\Users\JulieHillRoa\Source\Repos\FAQ2\FAQ\FAQ\obj\Debug\FAQ.csprojResolveAssemblyReference.cache

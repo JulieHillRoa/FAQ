@@ -32,6 +32,7 @@ $scope.changeQuestion = function (id){
            
            $scope.id = question.id;
            $scope.cid = question.categoryid;
+           $scope.date = question.date;
            $scope.category = question.category;
            $scope.question = question.question;
            $scope.isfeguant = question.isfequant;

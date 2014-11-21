@@ -11,14 +11,14 @@ FAQ.config(function ($routeProvider) {
         controller: 'HomeController',
         templateUrl: 'Faqs.html'
     })
+    .when('/Faq/:id', {
+        controller: 'FaqController',
+        templateUrl: 'FaqsCategory.html'
+    })
     .when('/SeeUnanswered', {
          controller: 'AdminController',
          templateUrl: 'SeeUnanswerdQuestions.html'
      })
-    .when('/answer', {
-        controller: 'AdminController',
-        templateUrl: 'ChangeQuestion.html'
-    })
     .otherwise({
         controller: "HomeController",
         templateUrl: "Faqs.html"
@@ -30,9 +30,6 @@ FAQ.config(function ($routeProvider) {
 FAQ.controller('HomeController', function ($scope, $http,$location) {
 
     var url = '../../api/Home/';
-    $scope.all = true;
-    $scope.showcategory = false;
-    $scope.searchdiv = false;
     $scope.onload = true;
 
     function getAll() {
@@ -70,23 +67,23 @@ $scope.sumbitQuestion = function () {
       });
 };
 
-$scope.seeCategory = function (id) {
-    $scope.all = false;
-    $scope.searchdiv = true;
-    $scope.showcategory = true;
-   
-
-        $http.get(url+id).
-          success(function (allQIncategories) {
-              $scope.list = allQIncategories;  
-
-          }).
-          error(function (data, status) {
-              console.log(status + data);
-          });
-};
-
-
 
 });
 
+FAQ.controller("FaqController", function ($scope, $http, $routeParams,$route) {
+     
+    
+    function getCat() {
+        $http.get('../../api/Home/' + $routeParams.id).
+        success(function (allQIncategories) {
+            $scope.list = allQIncategories;
+           
+
+        }).
+        error(function (data, status) {
+            console.log(status + data);
+        });
+    };
+    getCat();
+
+});

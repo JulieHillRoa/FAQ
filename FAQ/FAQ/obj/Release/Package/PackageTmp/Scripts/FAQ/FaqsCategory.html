@@ -1,0 +1,31 @@
+﻿<div class="container body-content" ng-show="true" ng-controller="FaqController">
+    <div class="jumbotron">
+        <div class="searchrow" >
+            <form class="form-search ">
+                <div class="input-append centerplacement ">
+                    <input type="search" ng-model="searchText" placeholder=" filtrer på ord eller fult spørsmål du ønsker å vite mer om" class="span2 search-query resizeseach">
+                    <button type="submit" class="seachbtn pull-right"><span class="glyphicon glyphicon-search"></span></button>
+                </div>
+            </form>
+        </div>
+        <div class="container">
+            <div class="row ">
+                <h3><strong> <img src="../../Content/img/{{list[0].categoryID}}_.png" style="width:34px;height:34px" /> {{list[0].category}}</strong></h3>
+            </div>
+            <div ng-repeat="l in list">
+                <div class="row col-md-20">
+                    <div class="row">
+                        <accordion>
+                            <accordion-group ng-repeat="q in l.questionlist | filter:searchText" is-open="isOpen">
+                                <accordion-heading is-open="isOpen">
+                                    <h4>  {{q.question}} </h4>
+                                </accordion-heading>
+                                {{q.answer}}
+                            </accordion-group>
+                        </accordion>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

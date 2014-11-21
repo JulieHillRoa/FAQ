@@ -146,8 +146,6 @@ namespace FAQ
                 foreach (var item in categories)
                 {
                     item.questionlist = getUnansweredQuestions(item.categoryID);
-                    foreach (var i in item.questionlist)
-                        i.date = i.date.Substring(0, 11);
                 }
                 return categories;
             }
@@ -195,7 +193,7 @@ namespace FAQ
                 question.id = questions.Id;
                 question.categoryid = questions.Categoryid;
                 question.category = db.Categories.Find(questions.Categoryid).Category;
-                question.date = questions.Date.ToString();
+                question.date = questions.Date.ToString("dd.MM.yyyy");
                 question.email = questions.email;
                 question.question = questions.Question;
                 question.answer = questions.Answer;
